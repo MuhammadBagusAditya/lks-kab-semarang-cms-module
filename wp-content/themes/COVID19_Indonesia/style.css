@@ -1,0 +1,113 @@
+/*
+Theme Name: COVID19_Indonesia
+Author: TidyThemes
+Author URI: https://github.com/tidythemes
+Description: Donations: https://calmestghost.com/donate. BlankSlate is the definitive WordPress boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Tags: accessibility-ready, one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Version: 2023
+Requires at least: 5.2
+Tested up to: 6.1
+Requires PHP: 7.0
+License: GNU General Public License v3 or Later
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2023 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+
+/* judul navbar */
+.navbar-brand {
+	display: flex;
+	gap: 0.4rem;
+	justify-content: center;
+	align-items: center;
+}
+
+/* logo di judul navbar */
+.header-title {
+	font-size: 1.5rem;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* header awal */
+.jumbotron {
+	width: 100%;
+	height: 60vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* pseudo elemen agar header berwarna hitam transparan */
+.jumbotron::after {
+	content: "";
+	width: 100%;
+	height: 60vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* agar container tidak terhalang pseudo elemen */
+.jumbotron .container {
+	position: relative;
+	z-index: 2;
+}
+
+/* text about us */
+.about {
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.25px;
+}
+
+/* gambar post  */
+.post-thumbnail {
+	width: 100%;
+	height: 250px;
+	border-radius: 0.25rem;
+	object-fit: cover;
+}
+
+/* style penyesuaian untuk judul di post */
+.post h6 {
+	font-size: 1.15rem;
+}
+
+/* gambar post di index.php */
+.home-post-thumbnail {
+	width: 100%;
+	height: 150px;
+	border-radius: 0.25rem;
+	object-fit: cover;
+}
+
+/* link post */
+a.post-url {
+	color: black;
+	text-decoration: none;
+}
+
+/* gambar post di single.php (detail post) */
+.single-thumbnail {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 0.25rem;
+}
+
+/* style untuk link di footer */
+#footer a {
+	text-decoration: none;
+	color: white;
+}
